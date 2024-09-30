@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="./src/assets/css/output.css" rel="stylesheet">
+		<title>Jogo da Velha</title>
+	</head>
+	<body class="bg-red-500">
+		<main class="flex flex-col justify-center items-center h-screen w-full p-6 relative sm:w-1/2 sm:mx-auto md:w-2/3 lg:w-2/4 xl:w-2/5 2xl:w-1/5">
+			<div id="bloco-vencedor" class="z-50 bg-gray-800 text-gray-200 p-6 absolute m-auto shadow-2xl rounded-lg w-2/5 aspect-square flex flex-col items-center justify-center -translate-y-full invisible transition-all"></div>
+			<h1 class="text-white text-2xl font-extrabold mb-4 border-b-2 border-yellow-400 w-full p-3 text-center">Jogo da Velha</h1>
+			<span id="vez" class="flex w-full float-left items-center mb-2 h-8 text-white"></span>
+			<section id="bloco-jogo" class="grid grid-cols-3 gap-1 mx-auto w-full relative">
+				<div id="bloco-linha" class="box-linha-vitoria hidden">
+					<div id="linha" class=""><hr class="traco-vitoria transition-all duration-200" /></div>
+				</div>
+				<!-- área de renderização do jogo -->
+			</section>
+		</main>
+		<script src="./src/js/main.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
